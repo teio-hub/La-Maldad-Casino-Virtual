@@ -90,3 +90,27 @@ class Casino:
         dado2 = random.randint(1, 6)
         suma = dado1 + dado2
         return f"Dado 1: {dado1}, Dado 2: {dado2}, Total: {suma}"
+
+    def bingo(self):
+        carton = random.sample(range(1, 76), 25)
+        sorteados = random.sample(range(1, 76), 30)
+        aciertos = [num for num in carton if num in sorteados]
+        cantidad = len(aciertos)
+
+        if cantidad >= 5:
+            resultado = "¡Ganaste al completar una línea!"
+        else:
+            resultado = "No completaste una línea. Sigue intentando."
+
+        return f"Cartón: {carton[:5]}...\nNúmeros acertados: {cantidad} -> {resultado}"
+
+    def carrera_caballos(self, apuesta: int):
+        caballos = ['Caballo 1', 'Caballo 2', 'Caballo 3', 'Caballo 4', 'Caballo 5']
+        ganador = random.randint(1, 5)
+
+        if apuesta == ganador:
+            resultado = "¡Felicidades! Tu caballo ganó. 🏇🏆"
+        else:
+            resultado = f"Perdiste. Ganó el {caballos[ganador - 1]}."
+
+        return f"Apostaste al Caballo {apuesta}. Resultado: {resultado}"
