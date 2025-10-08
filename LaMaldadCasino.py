@@ -35,3 +35,40 @@ class Casino:
             color = 'Rojo'
 
         return f"Bola: {tirar_bola}, ({color})"
+
+    def traga_monedas(self):
+        simbolos = ['🍒', '🔔', '💎', '🍋', '7️⃣', '⭐']
+        manivela = []
+        for i in range(3):
+            simbolo = random.choice(simbolos)
+            manivela.append(simbolos)
+
+        texto = ""
+        for i in range(len(manivela)):
+            texto += manivela[i]
+            if i < len(manivela) - 1:
+                texto += " | "
+
+        if len(set(manivela)) == 1:
+            resultado = "¡Jackpot! Ganaste el premio mayor, felicidades."
+        elif len(set(manivela)) == 2:
+            resultado = "Muy cerca... pero ganaste un premio menor."
+        else:
+            resultado = "Mala suerte, sigue intentando"
+        return f"Manivela: {texto} -> {resultado}"
+
+    def poker(self):
+        simbolitos = ['♠', '♥', '♦', '♣']
+        valoritos = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+        mano = []
+        texto = ""
+
+        for i in range(5):
+            carta = random.choice(valoritos) + random.choice(simbolitos)
+            mano.append(carta)
+        for i in range(len(mano)):
+            texto += ","
+            if i < len(mano) - 1:
+                texto += ","
+
+        return f"Tu mano de poker: {texto}"
