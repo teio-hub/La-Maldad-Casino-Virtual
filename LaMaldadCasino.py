@@ -72,3 +72,21 @@ class Casino:
                 texto += ","
 
         return f"Tu mano de poker: {texto}"
+
+    def baccarat(self):
+        jugador = random.randint(0, 9)
+        casa = random.randint(0, 9)
+
+        if jugador > casa:
+            resultado = "Gana el jugador"
+        elif casa > jugador:
+            resultado = "Gana la casa"
+        else:
+            resultado = "Hay empate"
+        return f"Jugador: {jugador}, Casa: {casa} -> {resultado}"
+
+    def dados(self):
+        dado1 = random.randint(1, 6)
+        dado2 = random.randint(1, 6)
+        suma = dado1 + dado2
+        return f"Dado 1: {dado1}, Dado 2: {dado2}, Total: {suma}"
