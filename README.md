@@ -10,11 +10,11 @@ Este proyecto busca recrear la experiencia de un casino clásico desde la consol
 Usando la librería random, el sistema genera resultados aleatorios para cada juego, permitiendo simular partidas rápidas y entretenidas.
 
 Los juegos incluidos son:
- Blackjack: Saca dos cartas y calcula el valor de tu mano.
- Ruleta: Gira la ruleta y descubre el número y color ganador.
- Tragamonedas: Prueba suerte con tres rodillos de símbolos.
- Poker: Simula una mano básica de cartas.
- Baccarat: Adivina el valor de las cartas de tus oponentes.
- Dados: Lanza 2 dados, saca un 7 o un 11 para ganar.
- Bingo: Tacha una linea de 5 en tu ficha para ganar.
- Carreras de caballos: Apuesta dinero a un caballo ennumerado.
+# Blackjack: Saca dos cartas y calcula el valor de tu mano.
+# Ruleta: Gira la ruleta y descubre el número y color ganador.
+# Tragamonedas: Prueba suerte con tres rodillos de símbolos.
+# Poker: Simula una mano básica de cartas.
+# Baccarat: Adivina el valor de las cartas de tus oponentes.
+# Dados: Lanza 2 dados, saca un 7 o un 11 para ganar.
+# Bingo: Tacha una linea de 5 en tu ficha para ganar.
+# Carreras de caballos: Apuesta dinero a un caballo ennumerado.
