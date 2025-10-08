@@ -23,7 +23,6 @@ class Casino:
         return f"cartas: {mano}, {puntos}"
 
     def ruleta(self):
-        colores = ['Rojo', 'Negro', 'Verde']
         numeros = list(range(0, 37))
         tirar_bola = random.choice(numeros)
 
