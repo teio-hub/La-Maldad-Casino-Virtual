@@ -638,3 +638,75 @@ class JuegoDados:
                 return
             else:
                 print(f"No es {punto} ni 7. Sigue tirando...")
+
+class Bingo:
+    def __init__(self, jugador: Jugador, apuesta: AFichas):
+        self.jugador = jugador
+        self.apuesta = apuesta
+        self.carton = random.sample(range(1, 31), 5)
+
+    def iniciar_juego(self):
+        print("\nBINGO DEL CASINO")
+        print(f"Tu cartón: {sorted(self.carton)}")
+        apuesta = self.apuesta.cantidad_apuesta()
+        if not apuesta:
+            return
+
+        print("\nSe cantan 10 números...")
+        cantados = random.sample(range(1, 31), 10)
+        print(f"Números: {cantados}")
+
+        aciertos = len(set(self.carton) & set(cantados))
+        print(f"\n¡Tienes {aciertos} aciertos!")
+
+        if aciertos >= 4:
+            print("¡¡BINGO!! Ganaste 5 veces tu apuesta.")
+            for v, c in apuesta.items():
+                self.jugador.chips[v] += c * 5
+        elif aciertos == 3:
+            print("Línea. Duplicaste tu apuesta.")
+            for v, c in apuesta.items():
+                self.jugador.chips[v] += c * 2
+        elif aciertos >= 1:
+            print("Premio menor. Recuperas tu apuesta.")
+            for v, c in apuesta.items():
+                self.jugador.chips[v] += c
+        else:
+            print("Sin suerte esta vez.")
+
+
+class CarreraCaballos:
+    def __init__(self, jugador: Jugador, apuesta: AFichas):
+        self.jugador = jugador
+        self.apuesta = apuesta
+        self.caballos = ["Pablo", "Mario", "Pegaso", "Trueno", "Sombra"]
+
+    def iniciar_juego(self):
+        print("\n¡CARRERA DE CABALLOS!")
+        for i, c in enumerate(self.caballos, 1):
+            print(f"{i}. {c}")
+
+        while True:
+            eleccion = input("\nElige tu caballo (1-5): ")
+            if eleccion.isdigit() and 1 <= int(eleccion) <= 5:
+                elegido = self.caballos[int(eleccion) - 1]
+                break
+            print("Número inválido")
+
+        print(f"\nApostaste por {elegido}")
+        apuesta = self.apuesta.cantidad_apuesta()
+        if not apuesta:
+            return
+
+        print("\n¡SUENA LA CAMPANA! Los caballos arrancan...")
+        ganador = random.choice(self.caballos)
+        print(f"\n¡¡Y EL GANADOR ES... {ganador.upper()}!!")
+
+        if elegido == ganador:
+            print("¡TU CABALLO GANÓ! Triplicaste tu apuesta.")
+            for v, c in apuesta.items():
+                self.jugador.chips[v] += c * 3
+        else:
+            print(f"{elegido} llegó en otro puesto. Mejor suerte la próxima.")
+
+
