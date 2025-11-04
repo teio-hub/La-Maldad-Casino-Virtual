@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c33a6f3c-b05e-4ad5-b009-1e9e8d834170" name="Changes" comment="" />
+=======
+    <list default="true" id="6517e797-703a-4116-a2b0-14721c8cbe7c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LaMaldadCasino.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LaMaldadCasino.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LaMaldadCasino.py" beforeDir="false" afterPath="$PROJECT_DIR$/LaMaldadCasino.py" afterDir="false" />
+    </list>
+>>>>>>> 950623a44cda8375abedcb44db82157f20fac29d
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -17,33 +25,59 @@
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="34zslgrLHgAPlytD6faWHWMbjqn" />
+=======
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="34ztqJZLbzoV07akwGVcbd5ymS1" />
+>>>>>>> 950623a44cda8375abedcb44db82157f20fac29d
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true"
+=======
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "configurable.group.editor"
+>>>>>>> 950623a44cda8375abedcb44db82157f20fac29d
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+<<<<<<< HEAD
         <option value="bundled-python-sdk-b3ae9b5d7125-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.439" />
+=======
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
+>>>>>>> 950623a44cda8375abedcb44db82157f20fac29d
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="c33a6f3c-b05e-4ad5-b009-1e9e8d834170" name="Changes" comment="" />
       <created>1762227887723</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1762227887723</updated>
+=======
+      <changelist id="6517e797-703a-4116-a2b0-14721c8cbe7c" name="Changes" comment="" />
+      <created>1762228418088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762228418088</updated>
+>>>>>>> 950623a44cda8375abedcb44db82157f20fac29d
     </task>
     <servers />
   </component>
